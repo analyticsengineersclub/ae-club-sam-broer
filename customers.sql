@@ -20,4 +20,5 @@ select
     left join orders on customers.id = orders.customer_id
     group by 1, 2, 3
     order by first_order_at
-    limit 5
+
+--merge conflcit practice
