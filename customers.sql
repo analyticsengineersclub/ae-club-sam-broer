@@ -1,3 +1,4 @@
+--Making a change for merge conflict practice
 with customers as (
 
     select * from `analytics-engineers-club.coffee_shop.customers`
