@@ -13,12 +13,11 @@ with customers as (
 select 
         customers.id as customer_id,
         customers.name,
-        email,
+        customers.email,
         min(orders.created_at) as first_order_at,
         count(distinct(orders.id)) as number_of_orders, 
     from customers
-    left join orders
-        on customers.id = orders.customer_id
+    left join orders on customers.id = orders.customer_id
     group by 1, 2, 3
     order by first_order_at
     limit 5
