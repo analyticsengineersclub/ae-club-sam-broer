@@ -22,3 +22,5 @@ select
     group by 1, 2, 3
     order by first_order_at
     limit 5
+
+-- sean's comment to create a merge conflict -svm
